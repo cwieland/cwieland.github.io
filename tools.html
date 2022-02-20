@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	
+    Atari 2600 Development Tools
+
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="verify-v1" content="y4iaXViOiYrjMWktwOhxcPSRa6SIyMnjdbklvKzRMxk=" /><link rel="stylesheet" href="/css/bootstrap.min.css" /><link rel="stylesheet" href="/css/bootstrap-theme.css" media="screen" /><link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Set the active class on the navigation based on the current page
+            $("nav, a").find(".active").removeClass("active");
+            switch (window.location.pathname.toLowerCase())
+            {
+                case "/":
+                case "/default.aspx":
+                    $("#liNews").addClass("active");
+                    break;
+
+                case "/tools.aspx":
+                    $("#liTools").addClass("active");
+                    break;
+
+                case "/demos.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liDemosPage").addClass("active");
+                    break;
+
+                case "/emulator/missile1.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile1").addClass("active");
+                    break;
+
+                case "/emulator/missile2.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile2").addClass("active");
+                    break;
+
+                case "/emulator/missile3.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile3").addClass("active");
+                    break;
+
+                case "/emulator/missile4.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile4").addClass("active");
+                    break;
+
+                case "/emulator/missile5.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile5").addClass("active");
+                    break;
+
+                case "/emulator/missile6.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile6").addClass("active");
+                    break;
+
+                case "/emulator/missile7.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile7").addClass("active");
+                    break;
+
+                case "/emulator/timer1.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liTimer1").addClass("active");
+                    break;
+
+                case "/emulator/Palette%20V2%20Cartridge%20Reproduction.aspx":
+                    $("#liDemos").addClass("active");
+                    $("#liPaletteV2").addClass("active");
+                    break;
+            }
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav navbar-home">
+                    <li>
+                        <a href="/Default.aspx">
+                            <img src="/images/logo.gif" alt="Home" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="liNews">
+                        <a href="/Default.aspx">Home</a>
+                    </li> 
+                    <li id="liTools">
+                        <a href="/Tools.aspx">Tools</a>
+                    </li>
+                    <li id="liDemos" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Demos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="liDemosPage">
+                            <a href="/Demos.aspx">Demos</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Emulator Pages</li>
+                        <li id="liMissile1">
+                            <a href="/emulator/Missile1.aspx">Run Player/Missile Demo #1</a>
+                        </li>
+                        <li id="liMissile2">
+                            <a href="/emulator/Missile2.aspx">Run Player/Missile Demo #2</a>
+                        </li>
+                        <li id="liMissile3">
+                            <a href="/emulator/Missile3.aspx">Run Player/Missile Demo #3</a>
+                        </li>
+                        <li id="liMissile4">
+                            <a href="/emulator/Missile4.aspx">Run Player/Missile Demo #4</a>
+                        </li>
+                        <li id="liMissile5">
+                            <a href="/emulator/Missile5.aspx">Run Player/Missile Demo #5</a>
+                        </li>
+                        <li id="liMissile6">
+                            <a href="/emulator/Missile6.aspx">Run Player/Missile Demo #6</a>
+                        </li>
+                        <li id="liMissile7">
+                            <a href="/emulator/Missile7.aspx">Run Player/Missile Demo #7</a>
+                        </li>
+                        <li id="liTimer1">
+                            <a href="/emulator/Timer1.aspx">Run Timer Demo #1</a>
+                        </li>
+                        <li id="liPaletteV2">
+                            <a href="/emulator/Palette%20V2%20Cartridge%20Reproduction.aspx">Run Palette V.2 Cartridge Reproduction</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form name="aspnetForm" method="post" action="Tools.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTgxMjAzNjcwZGSb9CiI2U4tzvzdo6mj8IEkEq3KTA==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="01DFC430" />
+</div>
+        <div class="container">
+            <h1>
+    Atari 2600 Development Tools
+</h1>
+            
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#asmtoolpanelbody">
+                <div class="row">
+                    <div class="col-sm-12">AssembleROM Tool</div>
+                </div>
+            </a>
+        </div>
+        <div id="asmtoolpanelbody" class="panel-body collapse in">
+            <div>
+                This tool allows for easy assembling and execution of your 6502 source file.  It assmebles your code using 
+                <a href="https://dasm-assembler.github.io/" target="_blank">DASM</a>
+                and executes the resulting ROM file in the 
+                <a href="https://stella-emu.github.io/" target="_blank">Stella emulator</a>.  I use this in tandam with 
+                <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
+                to build demos.  Before you can use it, you will need to configure the paths to both DASM and Stella by clicking the Options button.
+            </div>
+            <div class="newssubheading">
+                Screen Shots
+            </div>
+            <div id="asmtoolcarousel" class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/images/asmrom/asmrom1.jpg" alt="AssembleROM Tool Screen Shot" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+            <div class="newssubheading">
+                Windows
+            </div>
+            <div class="list-group-item">
+                <div>
+                    Written using Visual C# 3.5.  Requires Windows XP or later with the .NET 3.5 Framework 
+                    installed.  The 
+                    <a href="https://dasm-assembler.github.io/" target="_blank">DASM assembler</a> 
+                    and the 
+                    <a href="https://stella-emu.github.io/" target="_blank">Stella emulator</a>
+                    are required.  Visual Studio 2010 project is included.
+                </div>
+                <div>
+                    <a href="/files/tools/AssembleROM.zip">Download Assemble ROM tool for Windows (29k)</a>
+                    <br />
+                    <a href="/files/tools/6502XML.zip">Download 6502 Assembly Language Defintion for Notepad++ (2k)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#pfeditorpanelbody">
+                <div class="row">
+                    <div class="col-sm-12">Junkosoft Playfield Editor</div>
+                </div>
+            </a>
+        </div>
+        <div id="pfeditorpanelbody" class="panel-body collapse in">
+            <div>
+                This is an application that allows you to design playfield graphics!  It will export data for 
+                the PF0, PF1, and PF2 TIA registers, as well as foreground / background color data, in both 
+                hexadecimal and binary formats.  It has support for non-reflected (asymmetrical), reflected 
+                (symmetrical), and mirrored playfield modes.   Support for the CTRLPF SCORE bit may 
+                be incorporated into a future release.  This setting allows for the color of the left half of 
+                the playfield to match the color of player 0 and the right half to match that of player 1.  Other 
+                additions may be incorporated into future versions.
+            </div>
+            <div class="newssubheading">
+                Screen Shots
+            </div>
+            <div id="pfeditorcarousel" class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/images/pfedit/pfedit1.jpg" alt="Playfield Editor Screen Shot 1" class="img-responsive" />
+                    </div>
+                    <div class="item">
+                        <img src="/images/pfedit/pfedit2.jpg" alt="Playfield Editor Screen Shot 2" class="img-responsive" />
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#pfeditorcarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#pfeditorcarousel" data-slide-to="1"></li>
+                </ol>
+            </div>
+            <div class="newssubheading">
+                Windows
+            </div>
+            <div class="list-group-item">
+                <div>
+                    Written using Visual C# 1.1.  Requires Windows 98 or later with the .NET 1.1 Framework 
+                    installed.  Visual Studio 2003 project is included.
+                </div>
+                <div>
+                    <a href="/files/tools/PlayfieldEditor.zip">Download Junkosoft Playfield Editor for Windows with source code (547k)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#spriteeditorpanelbody">
+                <div class="row">
+                    <div class="col-sm-12">Junkosoft Sprite Editor</div>
+                </div>
+            </a>
+        </div>
+        <div id="spriteeditorpanelbody" class="panel-body collapse in">
+            <div>
+                This application replaces the process of drawing sprites out on paper and manually 
+                calcuating the hex/binary data each line. Drawing a sprite is a quick and easy task 
+                with this program. Just fill in the points you want to set and select the colors for 
+                each row. After you draw a sprite you like, you can save so you can load it later. The 
+                program calculates the sprite data you need for your demo or game and it can append this 
+                data to an existing source file or it can create a simple demo for you.
+            </div>
+            <div class="newssubheading">
+                Screen Shots
+            </div>
+            <div id="spriteeditorcarousel" class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/images/spredit/spredit1.jpg" alt="Sprite Editor Screen Shot 1" class="img-responsive" />
+                    </div>
+                    <div class="item">
+                        <img src="/images/spredit/spredit2.jpg" alt="Sprite Editor Screen Shot 2" class="img-responsive" />
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#spriteeditorcarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#spriteeditorcarousel" data-slide-to="1"></li>
+                </ol>
+            </div>
+            <div class="newssubheading">
+                Windows
+            </div>
+            <div class="list-group-item">
+                <div>
+                    Written using Visual C# 1.1.  Requires Windows 98 or later with the .NET 1.1 Framework 
+                    installed.  Visual Studio 2003 project is included.
+                </div>
+                <div>
+                    <a href="/files/tools/SpriteEditWindows.zip">Download Junkosoft Sprite Editor for Windows with source code (224k)</a>
+                </div>
+            </div>
+
+            <div class="newssubheading">
+                DOS
+            </div>
+            <div class="list-group-item">
+                <div>
+                    Written using Turbo Pascal 7.0.  Requires MS-DOS compatable OS, Super VGA graphics card
+                    that can handle 640x480 256 color mode, and a mouse.  Does not work with newer versions of Windows.  
+                    Turbo Pascal source files are included.
+                </div>
+                <div>
+                    <a href="/files/tools/SpriteEditDOS.zip">Download Junkosoft Sprite Editor for DOS with source code (177k)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#refdocpanelbody">
+                <div class="row">
+                    <div class="col-sm-12">Reference Documents</div>
+                </div>
+            </a>
+        </div>
+        <div id="refdocpanelbody" class="panel-body collapse in">
+            <div>
+                Various documents that are useful when trying to develop on the Atari 2600
+            </div>
+            <div>
+            <a href="/files/reference/6502ref.pdf" target="_blank">Download 6502 Reference Document (99k)</a>
+            <br />
+            <a href="/files/reference/stella.pdf" target="_blank">Download Stella Programmer's Guide (755k)</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </form>
+</body>
+</html>

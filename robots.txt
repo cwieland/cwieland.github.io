@@ -1,0 +1,12 @@
+# Robots.txt file
+User-agent: *
+Disallow: /_vti_bin
+Disallow: /_vti_cnf
+Disallow: /_vti_log
+Disallow: /_vti_pvi
+Disallow: /_vti_scripts
+Disallow: /_vti_txt
+Disallow: /bin
+Disallow: /ErrorPage.aspx
+
+Sitemap:  http://www.junkosoft.com/sitemap.xml
