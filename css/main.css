@@ -1,0 +1,169 @@
+﻿/* Push content below static top navigation */
+body {
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Custom classes */
+.navbar-default .navbar-home > li > a:hover {
+    background-color: #527E2D; 
+}
+.newsheading {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    background-color: White;
+    color: #527E2D;
+    width: 100%;
+}
+.newstitle {
+    text-align: left;
+}
+.newsdate {
+    text-align: right;
+}
+.newsarticle {
+    padding-bottom: 2em;
+}
+.newssubheading {
+    font-style: italic;
+    color: #527E2D;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+.javatari-container {
+    margin: 30px auto 0;
+    min-height: 594px;
+}
+.javatari-element {
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px rgb(60, 60, 60);
+}
+.javatari-danger {
+    display: none;
+}
+/* Make top navigation relative instead of fix when using a smaller screen */
+@media (max-width: 767px) {
+    body {
+        padding-top: 0px;
+    }
+    .navbar-fixed-top {
+        position: relative;
+    }
+    .newsdate {
+        text-align: left;
+    }
+    .javatari-container {
+        display: none;
+    }
+    .javatari-danger {
+        display: inline-block;
+    }
+}
+h1 {
+    padding-bottom: 0.5em;
+}
+a:visited, a:link {
+    color: Black;
+    text-decoration: underline;
+}
+.dropdown-menu {
+    z-index: 10000;
+}
+.dropdown-header {
+    color: #CCC;
+}
+.navbar-default
+{
+    background-color: #527E2D;
+    background-image: none;
+    border-color: #CCC;
+    color: #FFF;
+}
+.navbar-default a {
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #6E9A49;
+    background-image: none;
+    color: #FFF;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #96BD76;
+    background-image: none;
+    color: #FFF;
+}
+.navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active > a {
+    background-color: #6E9A49;
+    background-image: none;
+    font-weight: bold;
+    color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:link, .navbar-default .navbar-nav > li > a:visited {
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #96BD76;
+    color: #FFF;
+}
+.navbar-default .navbar-nav .open .dropdown-menu
+{
+    background-color: #527E2D;
+    background-image: none;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #96BD76;
+    background-image: none;
+    color: #FFF;
+}
+.dropdown-menu > .active > a:hover
+{
+    background-color: #96BD76;
+    background-image: none;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus
+{
+    background-color: #6E9A49;
+    background-image: none;
+    font-weight: bold;
+}
+.panel-primary
+{
+    border-color: #386116;
+}
+.panel-primary > .panel-heading {
+    color: #FFF;
+    background-color: #386116;
+    background-image: none;
+    border-color: #386116;
+}
+.panel-heading > a {
+    color: #FFF;
+    text-decoration: none;
+}
+/* Small resolution CSS */
+/*@media all and (max-width:767px)*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF;
+}
+/*@media all and (max-width:767px)*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #96BD76;
+    color: #FFF;
+}
+/*@media all and (max-width:767px)*/
+.navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFF;
+    background-color: #6E9A49;
+    background-image: none;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: auto;
+}
+#javatari {
+    text-align: center;
+    margin: 20px auto 0;
+    padding: 0 10px
+}
+#javatari-screen {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .7);
+}

@@ -1,6 +1,215 @@
-<html>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <title>News</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="verify-v1" content="y4iaXViOiYrjMWktwOhxcPSRa6SIyMnjdbklvKzRMxk=" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-theme.css" media="screen" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Set the active class on the navigation based on the current page
+            $("nav, a").find(".active").removeClass("active");
+            switch (window.location.pathname.toLowerCase())
+            {
+                case "/":
+                case "/index.html":
+                    $("#liNews").addClass("active");
+                    break;
+
+                case "/tools.html":
+                    $("#liTools").addClass("active");
+                    break;
+
+                case "/demos.html":
+                    $("#liDemos").addClass("active");
+                    $("#liDemosPage").addClass("active");
+                    break;
+
+                case "/emulator/missile1.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile1").addClass("active");
+                    break;
+
+                case "/emulator/missile2.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile2").addClass("active");
+                    break;
+
+                case "/emulator/missile3.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile3").addClass("active");
+                    break;
+
+                case "/emulator/missile4.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile4").addClass("active");
+                    break;
+
+                case "/emulator/missile5.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile5").addClass("active");
+                    break;
+
+                case "/emulator/missile6.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile6").addClass("active");
+                    break;
+
+                case "/emulator/missile7.html":
+                    $("#liDemos").addClass("active");
+                    $("#liMissile7").addClass("active");
+                    break;
+
+                case "/emulator/timer1.html":
+                    $("#liDemos").addClass("active");
+                    $("#liTimer1").addClass("active");
+                    break;
+
+                case "/emulator/Palette%20V2%20Cartridge%20Reproduction.html":
+                    $("#liDemos").addClass("active");
+                    $("#liPaletteV2").addClass("active");
+                    break;
+            }
+        });
+    </script>
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav navbar-home">
+                    <li>
+                        <a href="/Default.html">
+                            <img src="/images/logo.gif" alt="Home" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="liNews">
+                        <a href="/">Home</a>
+                    </li> 
+                    <li id="liTools">
+                        <a href="/Tools.html">Tools</a>
+                    </li>
+                    <li id="liDemos" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Demos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="liDemosPage">
+                            <a href="/Demos.html">Demos</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Emulator Pages</li>
+                        <li id="liMissile1">
+                            <a href="/emulator/Missile1.html">Run Player/Missile Demo #1</a>
+                        </li>
+                        <li id="liMissile2">
+                            <a href="/emulator/Missile2.html">Run Player/Missile Demo #2</a>
+                        </li>
+                        <li id="liMissile3">
+                            <a href="/emulator/Missile3.html">Run Player/Missile Demo #3</a>
+                        </li>
+                        <li id="liMissile4">
+                            <a href="/emulator/Missile4.html">Run Player/Missile Demo #4</a>
+                        </li>
+                        <li id="liMissile5">
+                            <a href="/emulator/Missile5.html">Run Player/Missile Demo #5</a>
+                        </li>
+                        <li id="liMissile6">
+                            <a href="/emulator/Missile6.html">Run Player/Missile Demo #6</a>
+                        </li>
+                        <li id="liMissile7">
+                            <a href="/emulator/Missile7.html">Run Player/Missile Demo #7</a>
+                        </li>
+                        <li id="liTimer1">
+                            <a href="/emulator/Timer1.html">Run Timer Demo #1</a>
+                        </li>
+                        <li id="liPaletteV2">
+                            <a href="/emulator/Palette%20V2%20Cartridge%20Reproduction.html">Run Palette V.2 Cartridge Reproduction</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+        <div class="container">
+            <h1>News</h1>
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">Demo updates!</div>
+            <div class="newsdate col-sm-2">06-21-2015</div>
+        </div>
+        <div class="col-sm-12">
+            Some minor changes to the player/missile demos have been added to the <a href="/Demos.html">Demos Page</a>.
+        </div>   
+    </div>
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">AssembleROM tool 1.0 Released!</div>
+            <div class="newsdate col-sm-2">07-30-2014</div>
+        </div>
+        <div class="col-sm-12">
+            AssembleROM is a new tool that helps automate assembling and executing a ROM source file in the Stella emulator.  It has been added to the
+            <a href="/Tools.html">Tools Page</a>.
+        </div>
+    </div>    
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">New Demos Released!</div>
+            <div class="newsdate col-sm-2">07-25-2014</div>
+        </div>
+        <div class="col-sm-12">
+            Some new player/missile demos have been added to the site!  They are posted on the  
+            <a href="/Demos.html">Demos Page</a>.
+        </div>
+    </div>
+    
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">Junkosoft Playfield Editor 1.0 Released!</div>
+            <div class="newsdate col-sm-2">07-03-2008</div>
+        </div>
+        <div class="col-sm-12">
+            An initial build of the Junkosoft Playfield Editor has been completed!  It is posted on the  
+            <a href="/Tools.html">Tools Page</a>.
+        </div>
+    </div>
+
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">Junkosoft Playfield Editor in the works!</div>
+            <div class="newsdate col-sm-2">06-27-2008</div>
+        </div>
+        <div class="col-sm-12">
+            I am currently working on an Atari 2600 playfield graphics editor.  It is being built as a Windows forms application using C# (and the sprite editor source as a starting point).  
+            I have the GUI and open/save routines working.  I just need to implement the output to ASM functionality and reflected/mirrored playfield modes and I should be ready for a 
+            public release!  More to come soon...
+        </div>
+    </div>
+
+    <div class="newsarticle row">
+        <div class="newsheading">
+            <div class="newstitle col-sm-10">Junkosoft Sprite Editor for Windows 1.0 Released!</div>
+            <div class="newsdate col-sm-2">06-19-2008</div>
+        </div>
+        <div class="col-sm-12">
+            The Junkosoft Sprite Editor has been rebuilt as Windows forms application using C#.NET 1.1.  
+            It is posted on the <a href="/Tools.html">Tools Page</a>.  
+            The Windows version is backwards compatible with files created using the DOS version.
+        </div>
+    </div>
+ 
+        </div>
+    </form>
 </body>
 </html>
